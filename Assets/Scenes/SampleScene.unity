@@ -578,6 +578,7 @@ GameObject:
   - component: {fileID: 388058988}
   - component: {fileID: 388058987}
   - component: {fileID: 388058989}
+  - component: {fileID: 388058990}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -669,6 +670,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &388058990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388058986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c2dbacb0d0e0646ba5c76ea104bbbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 10
+  _weapons:
+  - {fileID: 9098334415441131289, guid: 5fa7da3bddf075945a4cdb6e22e8e7dc, type: 3}
+  _shootPoint: {fileID: 1303902507}
 --- !u!1 &410173358
 GameObject:
   m_ObjectHideFlags: 0
