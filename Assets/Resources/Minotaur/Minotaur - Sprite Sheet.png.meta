@@ -7,16 +7,16 @@ TextureImporter:
     second: Minotaur - Sprite Sheet_0
   - first:
       213: -3482560379574023985
-    second: Minotaur - Sprite Sheet_1
+    second: Minotaur - Celebration_01
   - first:
       213: -4089556705372702670
-    second: Minotaur - Sprite Sheet_2
+    second: Minotaur - Celebration_02
   - first:
       213: -7291498848502609278
-    second: Minotaur - Sprite Sheet_3
+    second: Minotaur - Celebration_03
   - first:
       213: 5545791981575950956
-    second: Minotaur - Sprite Sheet_4
+    second: Minotaur - Celebration_04
   - first:
       213: 2695833335711562302
     second: Minotaur - walk1
@@ -85,10 +85,10 @@ TextureImporter:
     second: Minotaur - attack9
   - first:
       213: -1318174199656842201
-    second: Minotaur - Sprite Sheet_27
+    second: Minotaur - Celebration_05
   - first:
       213: 6790658768629077787
-    second: Minotaur - Sprite Sheet_28
+    second: Minotaur - Celebration_06
   - first:
       213: 5713599903254542684
     second: Minotaur - Sprite Sheet_29
@@ -974,7 +974,7 @@ TextureImporter:
         width: 55
         height: 156
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -982,6 +982,132 @@ TextureImporter:
       bones: []
       spriteID: 76d0a3efa061b76d0800000000000000
       internalID: -2991773290986861209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur - Celebration_01
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 416
+        width: 38
+        height: 48
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc804a249c57bafc0800000000000000
+      internalID: -3482560379574023985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur - Celebration_02
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 416
+        width: 38
+        height: 50
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238717708d9fe37c0800000000000000
+      internalID: -4089556705372702670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur - Celebration_03
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 416
+        width: 38
+        height: 51
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a05d6ed646fca90800000000000000
+      internalID: -7291498848502609278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur - Celebration_04
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 416
+        width: 38
+        height: 54
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c625b04ac6c96fc40800000000000000
+      internalID: 5545791981575950956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur - Celebration_05
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 416
+        width: 38
+        height: 49
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c7e55ac87e4bde0800000000000000
+      internalID: -1318174199656842201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minotaur - Celebration_06
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 416
+        width: 38
+        height: 48
+      alignment: 9
+      pivot: {x: 0.6, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17170feb244d3e50800000000000000
+      internalID: 6790658768629077787
       vertices: []
       indices: 
       edges: []

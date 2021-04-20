@@ -28,7 +28,7 @@ public class AttackState : State
 
     private void Attack(Player target)
     {
-        _animator.Play("Attack");
+        _animator.Play("attack");
         target.ApplyDamage(_damage);
     }
 }

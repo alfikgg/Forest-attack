@@ -9,7 +9,7 @@ public class CelebrationState : State
 
     private void Awake()
     {
-        _animator.GetComponent<Animator>();        
+        _animator = GetComponent<Animator>();        
     }
 
     private void OnEnable()
