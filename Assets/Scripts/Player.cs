@@ -39,8 +39,8 @@ public class Player : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnEnemyDied(int reward)
+    public void AddMoney(int money)
     {
-        Money += reward;
+        Money += money;
     }
 }
