@@ -12,6 +12,7 @@ public class NextWave : MonoBehaviour
     {
         _spawner.AllEnemySpawned += onAllEnemySpawned;
         _nextWaveButton.onClick.AddListener(OnNextWaveButtonClick);
+        _nextWaveButton.gameObject.SetActive(false);
     }
 
     private void OnDisable()
