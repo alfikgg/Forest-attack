@@ -4361,7 +4361,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 41754077}
   m_HandleRect: {fileID: 41754076}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5092,7 +5092,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a448734ddc1ceed43b2417dccac40723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weapons: []
+  _weapons:
+  - {fileID: 9098334415441131289, guid: 5fa7da3bddf075945a4cdb6e22e8e7dc, type: 3}
+  - {fileID: 9098334415441131289, guid: 5fa7da3bddf075945a4cdb6e22e8e7dc, type: 3}
+  - {fileID: 9098334415441131289, guid: 5fa7da3bddf075945a4cdb6e22e8e7dc, type: 3}
+  - {fileID: 9098334415441131289, guid: 5fa7da3bddf075945a4cdb6e22e8e7dc, type: 3}
+  - {fileID: 9098334415441131289, guid: 5fa7da3bddf075945a4cdb6e22e8e7dc, type: 3}
   _player: {fileID: 388058990}
   _template: {fileID: 4810300236554879550, guid: b17ce269bf3b3ac45bcdb36a3167b7d0,
     type: 3}
