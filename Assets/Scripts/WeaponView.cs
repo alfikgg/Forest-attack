@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class WeaponView : MonoBehaviour
@@ -12,6 +13,8 @@ public class WeaponView : MonoBehaviour
     [SerializeField] private Button _sellButton;
 
     private Weapon _weapon;
+
+    public event UnityAction<Weapon, WeaponView> SellButtonClick;
 
     private void OnEnable()
     {
@@ -26,14 +29,13 @@ public class WeaponView : MonoBehaviour
     public void Render(Weapon weapon)
     {
         _weapon = weapon;
-
         _label.text = weapon.Laber;
         _price.text = weapon.Price.ToString();
-        _icon.sprite = weapon.Icon;
+        _icon.sprite = weapon.Icon;        
     }
 
     private void OnButtonClick()
     {
-
+        SellButtonClick?.Invoke(_weapon, this);
     }
 }
