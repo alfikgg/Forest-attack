@@ -19,11 +19,19 @@ public class WeaponView : MonoBehaviour
     private void OnEnable()
     {
         _sellButton.onClick.AddListener(OnButtonClick);
+        _sellButton.onClick.AddListener(TryLockItem);
     }
 
     private void OnDisable()
     {
         _sellButton.onClick.RemoveListener(OnButtonClick);
+        _sellButton.onClick.RemoveListener(TryLockItem);
+    }
+
+    private void TryLockItem()
+    {
+        if (_weapon.IsBuyed)
+            _sellButton.interactable = false;
     }
 
     public void Render(Weapon weapon)
