@@ -17,4 +17,9 @@ public abstract class Weapon : MonoBehaviour
     public bool IsBuyed => _isBuyed;
 
     public abstract void Shoot(Transform shootPoint);
+
+    public void Buy()
+    {
+        _isBuyed = true;
+    }
 }

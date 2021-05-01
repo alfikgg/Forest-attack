@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     public int Money { get; private set; }
 
     public event UnityAction<int, int> HealthChanged;
+    public event UnityAction<int> MoneyChanged;
 
     private void Start()
     {
@@ -27,9 +28,12 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Time.timeScale != 0)
         {
-            _currentWeapon.Shoot(_shootPoint);
+            if (Input.GetMouseButtonDown(0))
+            {
+                _currentWeapon.Shoot(_shootPoint);
+            }
         }
     }
 
@@ -46,5 +50,13 @@ public class Player : MonoBehaviour
     public void AddMoney(int money)
     {
         Money += money;
+        MoneyChanged?.Invoke(Money);
+    }
+
+    public void BuyWeapon(Weapon weapon)
+    {
+        Money -= weapon.Price;
+        MoneyChanged?.Invoke(Money);
+        _weapons.Add(weapon);
     }
 }
