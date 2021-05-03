@@ -18,14 +18,14 @@ public class WeaponView : MonoBehaviour
 
     private void OnEnable()
     {
-        _sellButton.onClick.AddListener(OnButtonClick);
         _sellButton.onClick.AddListener(TryLockItem);
+        _sellButton.onClick.AddListener(OnButtonClick);
     }
 
     private void OnDisable()
     {
-        _sellButton.onClick.RemoveListener(OnButtonClick);
         _sellButton.onClick.RemoveListener(TryLockItem);
+        _sellButton.onClick.RemoveListener(OnButtonClick);
     }
 
     private void TryLockItem()
@@ -37,7 +37,7 @@ public class WeaponView : MonoBehaviour
     public void Render(Weapon weapon)
     {
         _weapon = weapon;
-        _label.text = weapon.Laber;
+        _label.text = weapon.Label;
         _price.text = weapon.Price.ToString();
         _icon.sprite = weapon.Icon;        
     }

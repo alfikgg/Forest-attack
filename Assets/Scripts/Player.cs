@@ -9,19 +9,24 @@ public class Player : MonoBehaviour
     [SerializeField] private int _health;
     [SerializeField] private List<Weapon> _weapons;
     [SerializeField] private Transform _shootPoint;
+    [SerializeField] private int _startMoney;
 
     private Weapon _currentWeapon;
+    private int _currentWeponNumber = 0;
     private int _currentHealth;
     private Animator _animator;
-    
-    public int Money { get; private set; }
+    private float _timeAfterLasShoot;
+
+
+    public int Money => _startMoney;
 
     public event UnityAction<int, int> HealthChanged;
     public event UnityAction<int> MoneyChanged;
+    public event UnityAction<Weapon> WeaponChanged;
 
     private void Start()
     {
-        _currentWeapon = _weapons[0];
+        ChangeWeapon(_weapons[_currentWeponNumber]);
         _currentHealth = _health;
         _animator = GetComponent<Animator>();
     }
@@ -30,9 +35,15 @@ public class Player : MonoBehaviour
     {
         if (Time.timeScale != 0)
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                _currentWeapon.Shoot(_shootPoint);
+            _timeAfterLasShoot += Time.deltaTime;
+
+            if (Input.GetMouseButtonDown(0) || Input.GetMouseButton(0))
+            {               
+                if (_timeAfterLasShoot >= _currentWeapon.ShootDelay)
+                {
+                    _timeAfterLasShoot = 0;
+                    _currentWeapon.Shoot(_shootPoint);
+                }
             }
         }
     }
@@ -49,14 +60,40 @@ public class Player : MonoBehaviour
     }
     public void AddMoney(int money)
     {
-        Money += money;
+        _startMoney += money;
         MoneyChanged?.Invoke(Money);
     }
 
     public void BuyWeapon(Weapon weapon)
     {
-        Money -= weapon.Price;
+        _startMoney -= weapon.Price;
         MoneyChanged?.Invoke(Money);
         _weapons.Add(weapon);
+    }
+
+    public void NextWeapon()
+    {
+        if (_currentWeponNumber == _weapons.Count - 1)
+            _currentWeponNumber = 0;
+        else
+            _currentWeponNumber++;
+
+        ChangeWeapon(_weapons[_currentWeponNumber]);
+    }
+
+    public void PreviousWeapon()
+    {
+        if (_currentWeponNumber == 0)
+            _currentWeponNumber = _weapons.Count - 1;
+        else
+            _currentWeponNumber--;
+
+        ChangeWeapon(_weapons[_currentWeponNumber]);
+    }
+
+    public void ChangeWeapon(Weapon weapon)
+    {
+        _currentWeapon = weapon;
+        WeaponChanged?.Invoke(_currentWeapon);
     }
 }

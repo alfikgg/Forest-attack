@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 806708206934048987}
-  - component: {fileID: 9098334415441131289}
+  - component: {fileID: 484978064887198332}
   m_Layer: 0
-  m_Name: Pistol
+  m_Name: ShotGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9098334415441131289
+--- !u!114 &484978064887198332
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,12 +40,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 558103138506446740}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff7b50eaec22e6044be8c222d686439f, type: 3}
+  m_Script: {fileID: 11500000, guid: 226dfc977f8d28c4895c44270c5f1e87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _label: Pistol
-  _price: 0
-  _shootDelay: 0.4
-  _icon: {fileID: 21300000, guid: 4837f9687f33fa84eafe898bd05b4491, type: 3}
+  _label: Shotgun
+  _price: 15
+  _shootDelay: 1
+  _icon: {fileID: 21300000, guid: 5f407bc2044141a4ca4102e04e918a39, type: 3}
   _isBuyed: 1
-  Bullet: {fileID: -6006572337774295419, guid: 38c3f60c9ecb3ed41a724cce1f41ea2e, type: 3}
+  Bullet: {fileID: -6006572337774295419, guid: c5cc6cbc198772146a4347436bb90cee, type: 3}
