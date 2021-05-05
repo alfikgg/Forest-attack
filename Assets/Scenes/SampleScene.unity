@@ -4719,7 +4719,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.8
+  m_fontSize: 35.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9617,14 +9617,34 @@ MonoBehaviour:
   _waves:
   - Templates:
     - {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809, type: 3}
+    - {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809, type: 3}
     - {fileID: 4737101363722724864, guid: 7adf4198de566af46aee143b6e58b982, type: 3}
+    - {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809, type: 3}
     Delay: 2
     Count: 5
-  - Templates: []
-    Delay: 1.5
+  - Templates:
+    - {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809, type: 3}
+    - {fileID: 4737101363722724864, guid: 7adf4198de566af46aee143b6e58b982, type: 3}
+    - {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809, type: 3}
+    - {fileID: 4737101363722724864, guid: 7adf4198de566af46aee143b6e58b982, type: 3}
+    - {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809, type: 3}
+    - {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809, type: 3}
+    - {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809, type: 3}
+    - {fileID: 4737101363722724864, guid: 7adf4198de566af46aee143b6e58b982, type: 3}
+    Delay: 2.1
     Count: 10
-  - Templates: []
-    Delay: 1
+  - Templates:
+    - {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809, type: 3}
+    - {fileID: 4737101363722724864, guid: 7adf4198de566af46aee143b6e58b982, type: 3}
+    - {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809, type: 3}
+    - {fileID: 4737101363722724864, guid: 7adf4198de566af46aee143b6e58b982, type: 3}
+    - {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809, type: 3}
+    - {fileID: 4737101363722724864, guid: 7adf4198de566af46aee143b6e58b982, type: 3}
+    - {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809, type: 3}
+    - {fileID: 4737101363722724864, guid: 7adf4198de566af46aee143b6e58b982, type: 3}
+    - {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809, type: 3}
+    - {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809, type: 3}
+    Delay: 2.3
     Count: 15
   _spawnPoint: {fileID: 2098527748}
   _player: {fileID: 388058990}
