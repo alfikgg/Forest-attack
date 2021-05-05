@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _label: Shotgun
-  _price: 15
+  _price: 12
   _shootDelay: 1
   _icon: {fileID: 21300000, guid: 5f407bc2044141a4ca4102e04e918a39, type: 3}
   _isBuyed: 0
