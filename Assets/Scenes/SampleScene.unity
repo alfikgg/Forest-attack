@@ -1607,7 +1607,7 @@ MonoBehaviour:
   _weapons:
   - {fileID: 9098334415441131289, guid: 5fa7da3bddf075945a4cdb6e22e8e7dc, type: 3}
   _shootPoint: {fileID: 1303902507}
-  _startMoney: 15
+  _startMoney: 0
 --- !u!1 &398789286
 GameObject:
   m_ObjectHideFlags: 0
@@ -4719,7 +4719,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.7
+  m_fontSize: 32.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9615,16 +9615,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _waves:
-  - Template: {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809,
-      type: 3}
+  - Templates:
+    - {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809, type: 3}
+    - {fileID: 4737101363722724864, guid: 7adf4198de566af46aee143b6e58b982, type: 3}
     Delay: 2
     Count: 5
-  - Template: {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809,
-      type: 3}
+  - Templates: []
     Delay: 1.5
     Count: 10
-  - Template: {fileID: 6986619415123121795, guid: 90c1090ea805254499025860e623d809,
-      type: 3}
+  - Templates: []
     Delay: 1
     Count: 15
   _spawnPoint: {fileID: 2098527748}
